@@ -6,7 +6,7 @@
     
       <title>Justicia Abierta</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="ELEMENTOS/redciudadana.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/redciudadana.png">
     
     <meta
       name="description"
@@ -64,44 +64,44 @@
       <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
           <div class="text-center">
-            <img src="/ELEMENTOS/loader.gif" style="width:50%;height:auto;margin:auto" alt="" />
+            <img src="/assets/loader.gif" style="width:50%;height:auto;margin:auto" alt="" />
           </div>
         </div>
       </div>
     </div>
     <header id="header" class="border-0" data-mobile-sticky="true">
 
-        <nav class="navbar sticky navbar-expand-lg navbar-light bg-white">
-            
-            <!--LOGO-->
-            <a class="navbar-brand" style="margin-left:5%" href="/index.html"><img style="max-width:300px!important" src="/ELEMENTOS/LOGO-RED_NEGRO.png"></a>
+      <nav class="navbar sticky navbar-expand-lg navbar-light bg-white">
+          
+        <!--LOGO-->
+        <a class="navbar-brand" style="margin-left:5%" href="/index.html"><img style="max-width:300px!important" src="/ELEMENTOS/LOGO-RED_NEGRO.png"></a>
 
-            <!--RESPONSIVE-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+        <!--RESPONSIVE-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--MENU-->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto" style="margin-right: 10%;">
-                    <a class="nav-item nav-link " href="/index.html">¿Qué es Justicia Abierta?</a>
-                    <a class="nav-item nav-link" href="/instituciones/index.html">Instituciones</a>
-                    <a class="nav-item nav-link" href="/iniciativas/index.html">Iniciativas</a>
-                    <a class="nav-item nav-link" href="/publicaciones/index.html">Publicaciones</a>
-                    <a class="nav-item nav-link" href="https://portaldajusticia.redciudadana.org/">Datos</a>
-                    <a class="nav-item nav-link" href="/contacto/index.html">Contacto</a>
-
-
-                    <!--Redes-->
-                    <a class="nav-item nav-link" href="https://www.facebook.com/Redciudadanagt/"><i class="fab fa-facebook-f" style="font-size: 25px;"></i> </a>
-                    <a class="nav-item nav-link" href="https://twitter.com/RedxGuate"><i class="fab fa-twitter" style="font-size: 25px;"></i></a>
+        <!--MENU-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto" style="margin-right: 10%;">
+            <a class="nav-item nav-link " href="/index.html">¿Qué es Justicia Abierta?</a>
+            <a class="nav-item nav-link" href="/instituciones/index.html">Instituciones</a>
+            <a class="nav-item nav-link" href="/iniciativas/index.html">Iniciativas</a>
+            <a class="nav-item nav-link" href="/publicaciones/index.html">Publicaciones</a>
+            <a class="nav-item nav-link" href="https://portaldajusticia.redciudadana.org/">Datos</a>
+            <a class="nav-item nav-link" href="/contacto/index.html">Contacto</a>
 
 
-                </div>
-            </div>
-        </nav>
+            <!--Redes-->
+            <a class="nav-item nav-link" href="https://www.facebook.com/Redciudadanagt/"><i class="fab fa-facebook-f" style="font-size: 25px;"></i> </a>
+            <a class="nav-item nav-link" href="https://twitter.com/RedxGuate"><i class="fab fa-twitter" style="font-size: 25px;"></i></a>
 
-        <div class="height-86"></div>
+
+          </div>
+        </div>
+      </nav>
+
+      <div class="height-86"></div>
 
     </header><!-- #header end -->
 
@@ -193,7 +193,19 @@
       })(jQuery);
     </script>
 
-    
+    <script>
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+              window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+              });
+          }
+          });
+      }
+      </script>
+      
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 
     {% block body_javascripts %}
