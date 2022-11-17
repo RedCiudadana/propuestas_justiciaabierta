@@ -6154,3 +6154,131 @@ button.mfp-close, button.mfp-arrow{
     background-image:url('/assets/02_SLIDER/SLIDER-08.png')
   }
 }
+
+.filtros{
+  background-color: #13C992;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 8px;
+  margin: 10px 20px 10px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  transition: 0.5s;
+}
+
+.filtros:hover{
+  background-color: #10c299;
+}
+
+.cuadro_propuesta{
+  border-radius: 10px;
+  border: 2px solid #006BE3;
+}
+
+.cuadro_propuesta .tag{
+  padding: 5%;
+}
+
+.cuadro_propuesta .numero_propuesta{
+  padding-top: 5%;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+.cuadro_propuesta .numero_propuesta p{
+  color: #92939E!important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta .contenido{
+  padding: 0 5% 5% 5%;
+}
+
+.cuadro_propuesta .contenido p{
+  color: #92939E!important;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta .bottom{
+  padding: 5%;
+  background-color: #006BE3;
+  border-color: #006BE3;
+  width: 101%;
+  margin-left: -0.5%;
+  margin-bottom: -0.5%;
+  border-bottom-left-radius: 10px;;
+  border-bottom-right-radius: 10px;;
+}
+
+.cuadro_propuesta .bottom .candidaturas{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta .bottom .candidaturas h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta .bottom .ciudadanos{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta .bottom .ciudadanos h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta .bottom .botones_finales{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cuadro_propuesta .bottom .botones_finales .apoyar{
+  background-color: #13C992;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta .bottom .botones_finales .apoyar:hover{
+  background-color: #10c299;
+}
+
+.cuadro_propuesta .bottom .botones_finales .vermas{
+  background-color: #025fa5;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta .bottom .botones_finales .vermas:hover{
+  background-color: #024ea5;
+}
+
+.ver_todo{
+  background-color: #13C992;
+  color: #fff!important;
+  border-radius: 10% / 50%;
+  padding: 10px 15px;
+  transition: 0.5s;
+}
+
+.ver_todo:hover{
+  background-color: #10c299;
+}
