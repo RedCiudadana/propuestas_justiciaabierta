@@ -7,7 +7,7 @@ media_folder: "assets/uploads" # Media files will be stored in the repo under sr
 public_folder: "/assets/uploads" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
-- name: "propuestas" # Used in routes, e.g., /admin/collections/blog
+  - name: "propuestas" # Used in routes, e.g., /admin/collections/blog
     label: "Propuestas" # Used in the UI
     folder: "src/propuesta" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -22,7 +22,31 @@ collections:
           name: "deparatamento ",
           label: "¿En qué departamento se generó esta propuesta? ",
           widget: "select",
-          options: ["Alta Verapaz","Baja Verapaz","Chimaltenago","Chiquimula","Guatemala","El Progreso","Escuintla","Huehuetenango","Izabal","Jalapa","Jutiapa","Petén","Quetzaltenango","Quiché","Retalhuleu","Sacatepequez","San Marcos","Santa Rosa","Sololá","Suchitepequez","Totonicapán","Zacapa"],
+          options:
+            [
+              "Alta Verapaz",
+              "Baja Verapaz",
+              "Chimaltenago",
+              "Chiquimula",
+              "Guatemala",
+              "El Progreso",
+              "Escuintla",
+              "Huehuetenango",
+              "Izabal",
+              "Jalapa",
+              "Jutiapa",
+              "Petén",
+              "Quetzaltenango",
+              "Quiché",
+              "Retalhuleu",
+              "Sacatepequez",
+              "San Marcos",
+              "Santa Rosa",
+              "Sololá",
+              "Suchitepequez",
+              "Totonicapán",
+              "Zacapa",
+            ],
         }
       - {
           label: "Selecciona una Categoria",
@@ -35,10 +59,23 @@ collections:
         }
       - { name: "problema", label: "El problema que quieres solucionar es" }
       - { name: "causa", label: "La causa de este problema es" }
-      - { name: "propuesta", label: "La propuesta para solucionar este problema es" }
-      - { name: "tiempo", label: "tiempo en el cual se puede llevar a cabo la propuesta", widget: "select", options: ["1 año", "2 años", "3 años", "4 años"] }
+      - {
+          name: "propuesta",
+          label: "La propuesta para solucionar este problema es",
+        }
+      - {
+          name: "tiempo",
+          label: "tiempo en el cual se puede llevar a cabo la propuesta",
+          widget: "select",
+          options: ["1 año", "2 años", "3 años", "4 años"],
+        }
       - { name: "resumen", label: "" }
-      - { name: "producto_encuentro", label: "Esta propuesta en producto de un encuentro local", widget: "select", options: ["Si", "No"] }
+      - {
+          name: "producto_encuentro",
+          label: "Esta propuesta en producto de un encuentro local",
+          widget: "select",
+          options: ["Si", "No"],
+        }
       - {
           name: "terminos_condiciones",
           label: "Acepto los Términos Y Condiciones",
@@ -56,7 +93,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Categoría" }
       - { name: "icono", label: "Icono de Municipio", widget: "image" }
-      - { name: "descripcion", label: "Descripción", widget: "markdown" }   
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
   - name: "publicaciones" # Used in routes, e.g., /admin/collections/blog
     label: "Publicaciones" # Used in the UI
     folder: "src/publicaciones" # The path to the folder where the documents are stored
