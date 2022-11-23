@@ -1,5 +1,0 @@
-{
-    "tags": "propuestas",
-    "permalink": "propuestas/{{ page.fileSlug }}/index.html",
-    "layout": "layouts/propuesta.njk"
-}
