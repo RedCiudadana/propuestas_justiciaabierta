@@ -999,7 +999,7 @@ strong,
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #BCE3C9;
+  background-color: #016be3;
 }
 
 .section-title span {
@@ -1245,7 +1245,7 @@ button[type='submit']:hover {
 
 .btn:hover,
 .button:hover {
-  background-color: #fc724b;
+  background-color: #016be3;
   color: #fff!important;
 }
 
@@ -9425,7 +9425,7 @@ span.fi-rs-apps {
 .primary-sidebar .sidebar-widget {
   position: relative;
   padding: 30px;
-  border: 1px solid #ececec;
+  border: 1px solid #016be3;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
@@ -9440,7 +9440,7 @@ span.fi-rs-apps {
   align-items: center;
   line-height: 48px;
   border-radius: 5px;
-  border: 1px solid #F2F3F4;
+  border: 1px solid #016be3;
   padding: 9px 18px;
   margin: 0 0 15px 0;
   -webkit-box-pack: justify;

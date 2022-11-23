@@ -34,22 +34,47 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- Product sidebar Widget -->
-                                <div class="sidebar-widget widget-category-2 mb-50">
-                                    <h5 class="section-title style-1 mb-30">Trámites Populares</h5>
-                                    <ul>
 
-                                        <li>
-                                            <a href="{{tramite.url}}"> {{tramite.data.title}}</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
 
                             </div>
                         </div>
                         
-                        
+                        <div class="col-lg-9">
+                            <div class="single-page pt-50 pl-30">
+                                <div class="single-header style-2">
+                                    <div class="row">
+                                        <div class="col-xl-10 col-lg-12 m-auto">
+                                            <h6 class="mb-10 text-left"><a href="#">Trámite</a></h6>
+                                            <h2 class="mb-10">{{title}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-content">
+                                    <div class="row">
+                                        <div class="col-xl-10 col-lg-12 m-auto texto-servicio">
+                                            <p>{{resumen | rmj |safe}}</p>
+                                            <h4 class="text-left">El Problema</h4>
+                                            <p>{{problema | rmj |safe}}</p>
+                                            <div class="linea_azul"></div>
+                                            <h4 class="text-left">La Causa</h4>
+                                            <p>{{causa | rmj |safe}}</p>
+                                            <div class="linea_azul"></div>
+                                            <h4 class="text-left">La Propuesta</h4>
+                                            <p>{{propuesta | rmj |safe}}</p>
+                                            
+                                            <a class="btn mb-20" href="#" target="_blank">Apoyar</a>
+
+                                            <!--Comment form-->
+                                            <div class="comment-form ">
+                                                <!--DISQUSS-->
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>

@@ -6282,3 +6282,10 @@ button.mfp-close, button.mfp-arrow{
 .ver_todo:hover{
   background-color: #10c299;
 }
+
+.linea_azul{
+  border-bottom:2px solid #016be3;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+}
