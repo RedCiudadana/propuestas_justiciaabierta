@@ -69,7 +69,7 @@ collections:
           widget: "select",
           options: ["1 año", "2 años", "3 años", "4 años"],
         }
-      - { name: "resumen", label: "" }
+      - { name: "resumen", label: "Resumen de la Propuesta" }
       - {
           name: "producto_encuentro",
           label: "Esta propuesta en producto de un encuentro local",
