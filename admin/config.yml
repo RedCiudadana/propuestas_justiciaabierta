@@ -19,7 +19,7 @@ collections:
       - { name: "nombre", label: "Nombre" }
       - { name: "correo", label: "Correo Electrónico" }
       - {
-          name: "deparatamento ",
+          name: "departamento",
           label: "¿En qué departamento se generó esta propuesta? ",
           widget: "select",
           options:

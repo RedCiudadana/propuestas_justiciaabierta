@@ -1,9 +1,59 @@
 {% extends "src/base.njk" %}
 
 {% block head %}
-<title>{{ title }}</title>
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/mainvendor.css" />
 {% endblock %}
 
 {% block content %}
 
+    <div class="page-content mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-11 col-lg-12 m-auto">
+                    <div class="row">
+                        
+                        <div class="col-lg-3 primary-sidebar sticky-sidebar pt-50">
+                            <div class="widget-area">
+                                <div class="sidebar-widget widget-category-2 mb-50">
+                                    <h5 class="section-title style-1 mb-30">Especificaciones</h5>
+                                    <ul>
+                                        <li>           
+                                            <a href="#"> <img src="/assets/imgs/red/elementos/iconos/ICONO-20.png" alt="" />Deparatamento: {{departamento}}</a>
+                                        </li>
+                                        <li>
+                                            <a style="pointer-events:none" href="shop-grid-right.html"> <img src="/assets/imgs/red/elementos/iconos/ICONO-25.png" alt="" />Esta propuesta en producto de un encuentro local: {{producto_encuentro}}</a>
+                                        </li>
+                                        <li>
+                                            <a style="pointer-events:none" href="shop-grid-right.html"> <img src="/assets/imgs/red/elementos/iconos/ICONO-27.png" alt="" />Tiempo: {{tiempo}}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/quejas.html"> <img src="/assets/imgs/red/elementos/iconos/ICONO-28.png" alt="" />¿Tienes problemas con este trámite? Comunícate con nosotros</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Product sidebar Widget -->
+                                <div class="sidebar-widget widget-category-2 mb-50">
+                                    <h5 class="section-title style-1 mb-30">Trámites Populares</h5>
+                                    <ul>
+
+                                        <li>
+                                            <a href="{{tramite.url}}"> {{tramite.data.title}}</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
