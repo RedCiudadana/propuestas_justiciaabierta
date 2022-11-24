@@ -26,32 +26,66 @@ permalink: nuevapropuesta/index.html
     <div class="container pt-130 pb-130">
       <div class="row">
         <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12">
-          <!--
-
-            CAMPOS
-            1505065566
-            1457085414
-            1382382532
-            1161638943
-            161286912
-            1361236886
-            1709917995
-            1791787968
-            1170069646
-            39077302
-            2102724523
-            2038303332
-
-          -->
+          
           <form class="propuestas_form" id="form" target="_self" onsubmit="return postToForm();" action="" autocomplete="off">
             <input id="name" name="entry.1505065566" type="string" required placeholder="Nombre Completo"/>
             <input id="email" name="entry.1457085414" type="email" required placeholder="Correo Electrónico"/>
-
-            <textarea id="message" name="entry.608682247" type="string" required placeholder="El problema que se requiere solucionar es"></textarea>
-            <textarea id="message" name="entry.608682247" type="string" required placeholder="La causa de este problema es"></textarea>
-            <textarea id="message" name="entry.608682247" type="string" required placeholder="La propuesta para solucionar este problema es"></textarea>
-            
-            <input id="name" name="entry.1505065566" type="checkbox" required placeholder="Acepto los Términos Y Condiciones"/>
+            <select id="deparatamento" name="entry.1382382532" placeholder="¿En qué departamento se generó esta propuesta?" required>
+              <option value="">¿En qué departamento se generó esta propuesta?</option>
+              <option value="Alta Verapaz">Alta Verapaz</option>
+              <option value="Baja Verapaz">Baja Verapaz</option>
+              <option value="Chimaltenago">Chimaltenago</option>
+              <option value="Chiquimula">Chiquimula</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="El Progreso">El Progreso</option>
+              <option value="Escuintla">Escuintla</option>
+              <option value="Huehuetenango">Huehuetenango</option> 
+              <option value="Izabal">Izabal</option>
+              <option value="Jalapa">Jalapa</option>
+              <option value="Jutiapa">Jutiapa</option>
+              <option value="Petén">Petén</option> 
+              <option value="Quetzaltenango">Quetzaltenango</option>
+              <option value="Quiché">Quiché</option>
+              <option value="Retalhuleu">Retalhuleu</option>
+              <option value="Sacatepequez">Sacatepequez</option> 
+              <option value="San Marcos">San Marcos</option> 
+              <option value="Santa Rosa">Santa Rosa</option>
+              <option value="Sololá">Sololá</option>
+              <option value="Suchitepequez">Suchitepequez</option>
+              <option value="Totonicapán">Totonicapán</option>
+              <option value="Zacapa">Zacapa</option> 
+            </select>
+            <select id="categoría" name="entry.1161638943" placeholder="Selecciona una Categoría" required>
+              <option value="">Selecciona una Categoría</option>
+              <option value="Acceso a Justicia">Acceso a Justicia</option>
+              <option value="Transparencia y anticorrupción">Transparencia y anticorrupción</option>
+              <option value="Derechos Humanos">Derechos Humanos</option>
+              <option value="Género">Género</option>
+              <option value="Instituciones de Justicia">Instituciones de Justicia</option>
+              <option value="Legislación">Legislación</option>
+              <option value="Poder Judicial">Poder Judicial</option>
+              <option value="Política Criminal">Política Criminal</option> 
+              <option value="Sistema Penitenciario">Sistema Penitenciario</option>
+              <option value="Sistema Registral">Sistema Registral</option>
+              <option value="Pluralismo Juridico">Pluralismo Juridico</option>
+            </select>  
+            <textarea id="problema" name="entry.161286912" type="string" required placeholder="El problema que se requiere solucionar es"></textarea>
+            <textarea id="causa" name="entry.1361236886" type="string" required placeholder="La causa de este problema es"></textarea>
+            <textarea id="propuesta" name="entry.1709917995" type="string" required placeholder="La propuesta para solucionar este problema es"></textarea>
+            <select id="tiempo" name="entry.1791787968" placeholder="Tiempo en el cual se puede llevar a cabo la propuesta" required>
+              <option value="">Tiempo en el cual se puede llevar a cabo la propuesta</option>
+              <option value="1 año">1 año</option>
+              <option value="2 años">2 años</option>
+              <option value="3 años">3 años</option>
+              <option value="4 años">4 años</option>
+            </select> 
+            <input id="titulo" name="entry.1170069646" type="string" required placeholder="Título de la propuesta"/>
+            <input id="resumen" name="entry.39077302" type="string" required placeholder="Resumen de la propuesta"/>
+            <select id="encuentro" name="entry.2102724523" placeholder="¿Esta propuesta es producto de un encuentro ciudadano? (Eventos, cursos y espacios mediados)" required>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select> 
+            <input id="name" name="entry.2038303332" type="checkbox" required placeholder="Acepto los Términos Y Condiciones"/>
 
             <button id="send" type="submit" class="btn">Envíanos tu Propuesta</button>
           </form>
@@ -64,6 +98,23 @@ permalink: nuevapropuesta/index.html
 {% endblock %}
 
 {% block body_javascripts %}
+    <!--
+
+      CAMPOS
+      1505065566
+      1457085414
+      1382382532
+      1161638943
+      161286912
+      1361236886
+      1709917995
+      1791787968
+      1170069646
+      39077302
+      2102724523
+      2038303332
+
+    -->
     <script>
       function postToForm() {
         var field1 = $("#name").val();
