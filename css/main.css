@@ -204,8 +204,8 @@ li {
 p {
   font-size: 15px;
   font-weight: normal;
-  line-height: 28px;
-  color: #748188;
+  line-height: 22px;
+  color: #666666!important;
   margin-bottom: 15px; }
 
 hr {
@@ -6213,7 +6213,7 @@ optgroup{
 }
 
 .filtros:hover{
-  background-color: #10c299;
+  background-color: #006BE3;
 }
 
 .cuadro_propuesta{
@@ -6324,7 +6324,8 @@ optgroup{
 }
 
 .cuadro_propuesta .bottom .botones_finales .apoyar:hover{
-  background-color: #10c299;
+  background-color: #fff;
+  color: #13C992!important;
 }
 
 .cuadro_propuesta .bottom .botones_finales .vermas{
@@ -6338,7 +6339,8 @@ optgroup{
 }
 
 .cuadro_propuesta .bottom .botones_finales .vermas:hover{
-  background-color: #024ea5;
+  background-color: #fff;
+  color: #006BE3!important;
 }
 
 .cuadro_propuesta2{
@@ -6427,7 +6429,8 @@ optgroup{
 }
 
 .cuadro_propuesta2 .bottom .botones_finales .apoyar:hover{
-  background-color: #10c299;
+  background-color: #fff;
+  color: #13C992!important;
 }
 
 .cuadro_propuesta2 .bottom .botones_finales .vermas{
@@ -6441,7 +6444,8 @@ optgroup{
 }
 
 .cuadro_propuesta2 .bottom .botones_finales .vermas:hover{
-  background-color: #024ea5;
+  background-color: #fff;
+  color: #006BE3!important;
 }
 
 .ver_todo{
@@ -6453,7 +6457,7 @@ optgroup{
 }
 
 .ver_todo:hover{
-  background-color: #10c299;
+  background-color: #006BE3;
 }
 
 .linea_azul{
