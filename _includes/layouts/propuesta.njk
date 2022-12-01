@@ -18,19 +18,20 @@
                         <div class="col-lg-3 primary-sidebar sticky-sidebar pt-50">
                             <div class="widget-area">
                                 <div class="sidebar-widget widget-category-2 mb-50">
-                                    <h5 class="section-title style-1 mb-30">Especificaciones</h5>
+                                    <h5 class="section-title style-1 mb-30">Detalles de Propuesta</h5>
                                     <ul>
                                         <li>           
-                                            <a href="#"> <img style="width:40px;height:40px" src="/assets/01_ICONOS/PROPUESTAS JA_02-15.png" alt="" />Deparatamento: {{departamento}}</a>
+                                            <a href="#"> <img style="width:30px;height:30px" src="/assets/01_ICONOS/PROPUESTAS JA_02-15.png" alt="" />Categoría: {{categoria}}</a>
                                         </li>
                                         <li>
-                                            <a style="pointer-events:none" href="#"> <img style="width:40px;height:40px" src="/assets/01_ICONOS/PROPUESTAS JA_02-16.png" alt="" />Esta propuesta en producto de un encuentro local: {{producto_encuentro}}</a>
+                                            <a style="pointer-events:none" href="#"> <img style="width:30px;height:30px" src="/assets/01_ICONOS/PROPUESTAS JA_02-18.png" alt="" />Plazo: {{tiempo}}</a>
                                         </li>
                                         <li>
-                                            <a style="pointer-events:none" href="#"> <img style="width:40px;height:40px" src="/assets/01_ICONOS/PROPUESTAS JA_02-18.png" alt="" />Plazo: {{tiempo}}</a>
+                                            <a style="pointer-events:none" href="#"> <img style="width:30px;height:30px" src="/assets/01_ICONOS/PROPUESTAS JA_02-16.png" alt="" />Ubicación: {{departamento}}</a>
                                         </li>
+                                        
                                         <li>
-                                            <a href="/quejas.html"> <img style="width:40px;height:40px" src="/assets/01_ICONOS/PROPUESTAS JA_02-17.png" alt="" />¿Tienes problemas con este trámite? Comunícate con nosotros</a>
+                                            <a style="pointer-events:none" href="#"> <img style="width:30px;height:30px" src="/assets/01_ICONOS/PROPUESTAS JA_02-17.png" alt="" />¿Esta propuesta es producto de un Encuentro Ciudadano?: {{producto_encuentro}}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -44,7 +45,7 @@
                                 <div class="single-header style-2">
                                     <div class="row">
                                         <div class="col-xl-10 col-lg-12 m-auto">
-                                            <h6 class="mb-10 text-left"><a href="#">Trámite</a></h6>
+                                            <h6 class="mb-10 text-left"><a href="#">Propuesta</a></h6>
                                             <h2 class="mb-10">{{title}}</h2>
                                         </div>
                                     </div>
@@ -62,7 +63,7 @@
                                             <h4 class="text-left">La Propuesta</h4>
                                             <p>{{propuesta | rmj |safe}}</p>
                                             
-                                            <a class="btn mb-20" href="#" target="_blank">Apoyar</a>
+                                            <!--a class="btn mb-20" href="#" target="_blank">Apoyar</a-->
 
                                             <!--Comment form-->
                                             <div class="comment-form ">
