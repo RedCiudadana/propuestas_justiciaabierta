@@ -6204,7 +6204,7 @@ optgroup{
   border: none;
   color: #fff;
   border-radius: 3px;
-  padding: 5px 8px;
+  padding: 8px 10px;
   margin: 10px 20px 10px 0;
   text-transform: uppercase;
   font-size: 13px;
@@ -6214,6 +6214,8 @@ optgroup{
 
 .filtros:hover{
   background-color: #006BE3;
+  color: #fff;
+  cursor: pointer;
 }
 
 .cuadro_propuesta{
@@ -6247,7 +6249,7 @@ optgroup{
   transform: rotate(45deg);
 }
 
-.cuadro_propuesta .tag{
+.cuadro_propuesta .tags{
   padding: 5%;
 }
 
@@ -6352,7 +6354,7 @@ optgroup{
   justify-content: space-between;
 }
 
-.cuadro_propuesta2 .tag{
+.cuadro_propuesta2 .tags{
   padding: 5%;
 }
 

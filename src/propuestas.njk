@@ -19,11 +19,9 @@ pagination:
 {% endblock %}
 
 {% block content %}
-
-     <!-- propuestas -->
-    <div class="section my-6">
+    <div class="section m-0 py-6" style="background-color:#f1f4fa">
         <div class="container">
-            <div class="row mt-40 pt-40">
+            <div class="row my-6 py-6">
                 <div class="col-lg-12">
 
                     <div class="my-6" style="text-align:center">
@@ -31,14 +29,25 @@ pagination:
                         <p>Te invitamos a filtrar y encontrar propuestas
                             ciudadanas en las siguientes áreas
                         </p>
+                        <br>
+                        <a class="ver_todo" href="/nuevapropuesta/index.html">Crear nueva propuesta</a>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- propuestas -->
+    <div class="section my-6">
+        <div class="container">
+            <div class="row ">
+                
 
                 <div class="col-lg-12"> 
                     <!--coleccion de filtros-->
                     {% for categoria in collections.categorias %}
-                    <button class="filtros">{{categoria.data.title}}</button>
+                    <a href="{{categoria.url}}" class="filtros">{{categoria.data.title}}</a>
                     {% endfor %}
                 </div>
 
@@ -47,8 +56,8 @@ pagination:
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
-                            <div class="tag">
-                                <button class="filtros">{{prop.data.categoria}}</button>
+                            <div class="tags">
+                                <a class="filtros">{{prop.data.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
                                 <p>propuesta N.393</p>
@@ -80,8 +89,8 @@ pagination:
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
-                            <div class="tag">
-                                <button class="filtros">{{prop.data.categoria}}</button>
+                            <div class="tags">
+                                <a class="filtros">{{prop.data.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
                                 <p>propuesta N.393</p>
@@ -113,8 +122,8 @@ pagination:
 
                 <div class="col-lg-4 my-4">
                     <div class="cuadro_propuesta2">
-                        <div class="tag">
-                            <button class="filtros">salud</button>
+                        <div class="tags">
+                            <a class="filtros">salud</a>
                         </div>
                         <div class="numero_propuesta">
                             <p>propuesta N.393</p>
