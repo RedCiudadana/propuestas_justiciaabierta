@@ -215,10 +215,12 @@ hr {
   padding: 0; }
 
 label {
-  color: #374455;
+  color: #666666;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400; 
+  text-transform:none;
+}
 
 *::-moz-selection {
   background: #233f4d;
