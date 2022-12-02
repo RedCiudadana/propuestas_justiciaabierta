@@ -10,6 +10,6 @@ propuesta: Capacitaciones en acceso a la información.
 tiempo: 2 años
 resumen: Se deben de generar procesos de formación en AIP para mejorar la
   calidad de las respuestas.
-producto_encuentro: No
+producto_encuentro: Si
 terminos_condiciones: true
 ---
