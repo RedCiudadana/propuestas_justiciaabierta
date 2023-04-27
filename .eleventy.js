@@ -17,4 +17,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
         return array.slice(0, limit);
     });
+
+    eleventyConfig.addCollection("propuestas", function (collectionApi) {
+        return collectionApi.getFilteredByTag('propuestas');
+    });
 }

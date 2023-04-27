@@ -123,35 +123,27 @@ permalink: "index.html"
 
                 <div class="col-lg-12 my-4"> 
                     <!--coleccion de filtros-->
-                    {% for categoria in collections.categorias %}
-                    <a href="{{categoria.url}}" class="filtros">{{categoria.data.title}}</a>
-                    {% endfor %}
-                    <!--button class="filtros">Cultura y deportes</button>
-                    <button class="filtros">medio ambiente y recursos naturales</button>
-                    <button class="filtros">salud</button>
-                    <button class="filtros">transporte público</button>
-                    <button class="filtros">seguridad y justicia</button>
-                    <button class="filtros">derechos sexuales y reproductivos</button>
-                    <button class="filtros">administración pública</button>
-                    <button class="filtros">economía y trabajo</button>
-                    <button class="filtros">infraestructura</button>
-                    <button class="filtros">seguridad alimenticia y nutricional</button-->
+                    <div class="row">
+                        {% for categoria in collections.categorias %}
+                        <a href="{{categoria.url}}" class="filtros my-1">{{categoria.data.title}}</a>
+                        {% endfor %}
+                    </div>
                 </div>
 
-                {% for prop in collections.propuesta %}
-                    {% if prop.data.producto_encuentro == "Si" %}
+                {% for prop in propuestas | limit(3) %}
+                    {% if prop.encuentro == "Si" %}
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
                             <div class="tags">
-                                <a class="filtros">{{prop.data.categoria}}</a>
+                                <a href="/categorias/{{prop.categoria | slug}}" class="filtros">{{prop.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
                                 <p>propuesta N.393</p>
                             </div>
                             <div class="contenido">
-                                <h5>{{prop.data.title}}</h5>
-                                <p>{{prop.data.resumen}}</p>
+                                <h5>{{prop.titulo}}</h5>
+                                <p>{{prop.resumen}}</p>
                             </div>
                             <div class="bottom">
                                 <div class="candidaturas">
@@ -172,19 +164,19 @@ permalink: "index.html"
 
                     {% endif %}
 
-                    {% if prop.data.producto_encuentro == "No" %}
+                    {% if prop.encuentro == "No" %}
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
                             <div class="tags">
-                                <a class="filtros">{{prop.data.categoria}}</a>
+                                <a href="/categorias/{{prop.categoria | slug}}" class="filtros">{{prop.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
                                 <p>propuesta N.393</p>
                             </div>
                             <div class="contenido">
-                                <h5>{{prop.data.title}}</h5>
-                                <p>{{prop.data.resumen}}</p>
+                                <h5>{{prop.titulo}}</h5>
+                                <p>{{prop.resumen}}</p>
                             </div>
                             <div class="bottom">
                                 <div class="candidaturas">
