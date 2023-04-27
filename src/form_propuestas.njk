@@ -38,10 +38,8 @@ permalink: nuevapropuesta/index.html
           <form class="propuestas_form" id="form" target="_self" onsubmit="return postToForm();" action="" autocomplete="off">
             <label for="name">Nombre Completo</label>
             <input id="name" name="entry.1505065566" type="string" required />
-            <label for="email">Correo Electrónico</label>
-            <input id="email" name="entry.1457085414" type="email" required />
             <label for="deparatamento">¿En qué departamento se generó esta propuesta?</label>
-            <select id="deparatamento" name="entry.1382382532" required>
+            <select id="deparatamento" name="entry.1791787968" required>
               <option value="" disabled selected hidden>Selecciona un Departamento</option>
               <option value="Alta Verapaz">Alta Verapaz</option>
               <option value="Baja Verapaz">Baja Verapaz</option>
@@ -67,38 +65,42 @@ permalink: nuevapropuesta/index.html
               <option value="Zacapa">Zacapa</option> 
             </select>
             <label for="categoria">¿En qué Categoría entraría la propuesta?</label>
-            <select id="categoria" name="entry.1161638943" required>
+            <select id="categoria" name="entry.1170069646" required>
               <option value="" disabled selected hidden>Selecciona una Categoría</option>
               <option value="Acceso a Justicia">Acceso a Justicia</option>
-              <option value="Transparencia y anticorrupción">Transparencia y anticorrupción</option>
+              <option value="Transparencia y rendición de cuentas">Transparencia y rendición de cuentas</option>
+              <option value="Acceso a la información y datos abiertos">Acceso a la información y datos abiertos</option>
+              <option value="Participación ciudadana y colaboración">Participación ciudadana y colaboración</option>
               <option value="Derechos Humanos">Derechos Humanos</option>
               <option value="Género">Género</option>
               <option value="Instituciones de Justicia">Instituciones de Justicia</option>
-              <option value="Legislación">Legislación</option>
+              <option value="Legislación">Legislación</option> 
               <option value="Poder Judicial">Poder Judicial</option>
-              <option value="Política Criminal">Política Criminal</option> 
+              <option value="Política Criminal">Política Criminal</option>
               <option value="Sistema Penitenciario">Sistema Penitenciario</option>
               <option value="Sistema Registral">Sistema Registral</option>
-              <option value="Pluralismo Juridico">Pluralismo Juridico</option>
+              <option value="Pluralismo Jurídico">Pluralismo Jurídico</option>
+              <option value="Inclusión">Inclusión</option>
+              <option value="Transformación Digital">Transformación Digital</option>
+              <option value="Mediciones">Mediciones</option>
+              <option value="Comunicación y Lenguaje Claro">Comunicación y Lenguaje Claro</option>
             </select>
-            <label for="problema">El problema que se requiere solucionar es</label>  
-            <textarea id="problema" name="entry.161286912" type="string" required></textarea>
-            <label for="causa">La causa de este problema es</label>  
-            <textarea id="causa" name="entry.1361236886" type="string" required></textarea>
-            <label for="propuesta">La propuesta para solucionar este problema es</label>  
-            <textarea id="propuesta" name="entry.1709917995" type="string" required></textarea>
-            <label for="tiempo">Tiempo en el cual se puede llevar a cabo la propuesta</label>  
+            <label for="problema">¿Cuál es el problema que queremos manejar y por qué es importante?</label>  
+            <textarea id="problema" name="entry.1382382532" type="string" required></textarea>
+            <label for="dirigido">¿Para quién es un problema?</label>  
+            <textarea id="dirigido" name="entry.1292327462" type="string" required></textarea>
+            <!--label for="tiempo">Tiempo en el cual se puede llevar a cabo la propuesta</label>  
             <select id="tiempo" name="entry.1791787968" required>
               <option value="" disabled selected hidden>Tiempo en el cual se puede llevar a cabo la propuesta</option>
               <option value="1 año">1 año</option>
               <option value="2 años">2 años</option>
               <option value="3 años">3 años</option>
               <option value="4 años">4 años</option>
-            </select> 
+            </select--> 
             <label for="titulo">Título de la propuesta</label>  
-            <input id="titulo" name="entry.1170069646" type="string" required />
+            <input id="titulo" name="entry.1361236886" type="string" required />
             <label for="resumen">Resumen de la propuesta</label>  
-            <input id="resumen" name="entry.39077302" type="string" required />
+            <input id="resumen" name="entry.1709917995" type="string" required />
             <label for="encuentro">¿Esta propuesta es producto de un encuentro ciudadano? (Eventos, cursos y espacios mediados)</label>  
             <select id="encuentro" name="entry.2102724523"required>
               <option value="Si">Si</option>
@@ -123,21 +125,18 @@ permalink: nuevapropuesta/index.html
     <script>
       function postToForm() {
         var field1 = $("#name").val();
-        var field2 = $("#email").val();
-        var field3 = $("#deparatamento option:selected").text();
-        var field4 = $("#categoria option:selected").text();
-        var field5 = $("#problema").val();
-        var field6 = $("#causa").val();
-        var field7 = $("#propuesta").val();
-        var field8 = $("#tiempo option:selected").text();
-        var field9 = $("#titulo").val();
-        var field10 = $("#resumen").val();
-        var field11 = $("#encuentro option:selected").text();
-        var field12 = $("#terminos option:selected").text();
+        var field2 = $("#deparatamento option:selected").text();
+        var field3 = $("#categoria option:selected").text();
+        var field4 = $("#problema").val();
+        var field5 = $("#dirigido").val();
+        var field6 = $("#titulo").val();
+        var field7 = $("#resumen").val();
+        var field8 = $("#encuentro option:selected").text();
+        var field9 = $("#terminos option:selected").text();
 
         $.ajax({
             url: "https://docs.google.com/forms/d/e/1FAIpQLSfuR72xLmAWiWplAgEzZZimQsLOD-_6_0GDEGJt3GhuKEyCuA/formResponse?",
-            data: {"entry.1505065566": field1, "entry.1457085414": field2, "entry.1382382532": field3, "entry.1161638943": field4, "entry.161286912": field5, "entry.1361236886": field6, "entry.1709917995": field7, "entry.1791787968": field8, "entry.1170069646": field9, "entry.39077302": field10, "entry.2102724523": field11, "entry.2038303332": field12},
+            data: {"entry.1505065566": field1, "entry.1791787968": field2, "entry.1170069646": field3, "entry.1382382532": field4, "entry.1292327462": field5, "entry.1361236886": field6, "entry.1709917995": field7, "entry.2102724523": field8, "entry.2038303332": field9},
             type: "POST",
             dataType: "xml",
             success: function(d)
