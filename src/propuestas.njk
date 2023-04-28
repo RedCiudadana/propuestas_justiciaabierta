@@ -1,15 +1,10 @@
 ---
-permalink: "propuestas/index.html"
----
-<!--
-
 pagination:
-  data: collections.propuestas
-  size: 6
-  alias: list
-  reverse: true
-
--->
+  data: propuestas
+  size: 12
+  alias: propuestas
+permalink: "propuestas/page-{{ pagination.pageNumber }}/index.html"
+---
 
 {% extends "src/base.njk" %}
 
@@ -124,18 +119,24 @@ pagination:
 
                 {% endfor %}
 
-                <!--div class="d-flex justify-content-center">
-                    {% if pagination.href.previous %}
-                    <div class="mx-4">
-                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                <div class="col-lg-12">
+                    <div class="row justify-content-center">
+                        <div class="pagination my-4">
+                            <ul>
+                                <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">←</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.previous }}">←</a>{% endif %}</li>
+
+                                
+                                {%- for pageEntry in pagination.pages %}
+
+                                <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+                                {%- endfor %}
+                                
+                                
+                                <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">→</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.next }}">→</a>{% endif %}</li>
+                            </ul>
+                        </div>
                     </div>
-                    {% endif %}
-                    {% if pagination.href.next %}
-                    <div class="mx-4">
-                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
-                    </div>
-                    {% endif %}
-                </div-->
+                </div>
 
             </div>
         </div>
