@@ -106,10 +106,10 @@ permalink: nuevapropuesta/index.html
               <option value="Si">Si</option>
               <option value="No">No</option>
             </select>
-            <label for="terminos">Acepto los Términos Y Condiciones</label>   
+            <!--label for="terminos">Acepto los Términos Y Condiciones</label>   
             <select id="terminos" name="entry.2038303332" required>
               <option value="Si">Si</option>
-            </select> 
+            </select--> 
 
             <button id="send" type="submit" class="btn">Envíanos tu Propuesta</button>
           </form>
@@ -132,11 +132,10 @@ permalink: nuevapropuesta/index.html
         var field6 = $("#titulo").val();
         var field7 = $("#resumen").val();
         var field8 = $("#encuentro option:selected").text();
-        var field9 = $("#terminos option:selected").text();
 
         $.ajax({
             url: "https://docs.google.com/forms/d/e/1FAIpQLSfuR72xLmAWiWplAgEzZZimQsLOD-_6_0GDEGJt3GhuKEyCuA/formResponse?",
-            data: {"entry.1505065566": field1, "entry.1791787968": field2, "entry.1170069646": field3, "entry.1382382532": field4, "entry.1292327462": field5, "entry.1361236886": field6, "entry.1709917995": field7, "entry.2102724523": field8, "entry.2038303332": field9},
+            data: {"entry.1505065566": field1, "entry.1791787968": field2, "entry.1170069646": field3, "entry.1382382532": field4, "entry.1292327462": field5, "entry.1361236886": field6, "entry.1709917995": field7, "entry.2102724523": field8},
             type: "POST",
             dataType: "xml",
             success: function(d)
