@@ -6314,7 +6314,7 @@ optgroup{
 .cuadro_propuesta .bottom .botones_finales{
   margin: 10px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .cuadro_propuesta .bottom .botones_finales .apoyar{
